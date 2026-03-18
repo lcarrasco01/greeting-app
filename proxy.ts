@@ -25,9 +25,16 @@ export async function proxy(request: NextRequest) {
     }
   );
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  let user = null;
+  try {
+    const { data } = await supabase.auth.getUser();
+    user = data.user;
+  } catch (err) {
+    console.error('proxy: getUser failed', err);
+    // If Supabase is unreachable, fail-open so the app still loads.
+    // The page itself will redirect to login if it detects no session.
+    return supabaseResponse;
+  }
 
   const isAuthRoute = request.nextUrl.pathname.startsWith('/auth');
 
