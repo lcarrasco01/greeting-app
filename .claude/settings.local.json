@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(///wsl.localhost/Ubuntu/home/lcarrasco05/projects-wsl/**)",
+      "Bash(npx create-next-app@14 . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(wsl -d Ubuntu -e bash -c \"cd /home/lcarrasco05/projects-wsl && ls\")",
+      "Bash(wsl -d Ubuntu -e bash -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && npx create-next-app@14 . --typescript --tailwind --eslint --app --no-src-dir --import-alias ''@/*'' --no-git --yes 2>&1 | tail -20\")",
+      "Bash(wsl -d Ubuntu -e bash -l -c \"which node && node --version && which npm && npm --version\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"which node 2>/dev/null; which npm 2>/dev/null; ls /usr/local/bin/node 2>/dev/null; ls ~/.nvm/versions/ 2>/dev/null; ls /usr/bin/node 2>/dev/null\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && npx create-next-app@14 . --typescript --tailwind --eslint --app --no-src-dir --import-alias ''@/*'' --no-git --yes 2>&1 | tail -25\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && ls -la\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && mkdir tmp_init && cd tmp_init && npx create-next-app@14 . --typescript --tailwind --eslint --app --no-src-dir --import-alias ''@/*'' --no-git --yes 2>&1 | tail -10 && ls\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && mv tmp_init/.* . 2>/dev/null; mv tmp_init/* . 2>/dev/null; rm -rf tmp_init && ls -la\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && npm install @anthropic-ai/sdk @radix-ui/react-dialog @radix-ui/react-select @radix-ui/react-label @radix-ui/react-slot class-variance-authority clsx tailwind-merge lucide-react html2canvas 2>&1 | tail -10\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && npm install -D tailwindcss-animate 2>&1 | tail -5\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"mkdir -p /home/lcarrasco05/projects-wsl/greeting-app/app/types /home/lcarrasco05/projects-wsl/greeting-app/app/lib /home/lcarrasco05/projects-wsl/greeting-app/app/components/ui /home/lcarrasco05/projects-wsl/greeting-app/app/api/generate && echo ''Dirs created''\")",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && npm run build 2>&1 | tail -30\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(wsl -d Ubuntu -- bash -i -c \"cd /home/lcarrasco05/projects-wsl/greeting-app && npm run dev > /tmp/nextjs-dev.log 2>&1 &:*)",
+      "Bash(npm --version)",
+      "Bash(echo $PATH)",
+      "Bash(printenv PATH)",
+      "Bash(wsl --list --running)",
+      "Bash(wsl -e bash --login -c \"which npm && npm --version && which node && node --version\")",
+      "Bash(wsl -e bash --login -c \"which node 2>&1; node --version 2>&1; ls /usr/bin/node* 2>&1; ls /usr/local/bin/node* 2>&1\")",
+      "Bash(ls \"\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\lcarrasco05\\\\projects-wsl\\\\greeting-app\\\\node_modules\\\\next\\\\dist\\\\bin\"\" 2>/dev/null || echo \"not found \")",
+      "Bash(npm run:*)",
+      "Read(///wsl.localhost/Ubuntu//**)",
+      "Read(//mnt/c/**)"
+    ]
+  }
+}

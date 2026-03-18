@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "greeting-app",
+      "runtimeExecutable": "C:\\Program Files\\Git\\usr\\bin\\sh.exe",
+      "runtimeArgs": ["-c", "/c/nvm4w/nodejs/node //wsl.localhost/Ubuntu/home/lcarrasco05/projects-wsl/greeting-app/node_modules/next/dist/bin/next dev"],
+      "port": 3000
+    }
+  ]
+}
