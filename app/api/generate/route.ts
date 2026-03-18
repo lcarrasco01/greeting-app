@@ -91,7 +91,7 @@ export async function POST(req: NextRequest): Promise<NextResponse<GenerateRespo
 
     if (error instanceof Anthropic.APIError) {
       return NextResponse.json(
-        { success: false, error: `API error ${(error as Anthropic.APIError).status}: ${message}` },
+        { success: false, error: `API error ${error.status}: ${message}` },
         { status: 500 }
       );
     }
